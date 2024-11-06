@@ -16,3 +16,10 @@ strong{
     font-size: 18px;
     text-align: justify;
 }
+
+ul {
+    color:rgb(219, 106, 50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
