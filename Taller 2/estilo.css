@@ -1,0 +1,42 @@
+.imagen {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+.centrar {
+    max-width: 800 px;
+    text-align: center;
+    margin: 0 auto;
+}
+.estilo {
+    color: cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18 px;
+    text-align: justify;
+}
+
+#proyectos {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+#redessociales {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+#redes {
+    color: cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18 px;
+    text-align: justify;
+}
+footer {
+    text-align: center;
+    color: black;
+}
