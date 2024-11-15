@@ -64,3 +64,33 @@ footer {
     cursor: pointer;
     background-color: chocolate;
 }
+
+div > p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+} 
+
+p > h6 {
+    color: rgb(49, 154, 220);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+aside > h2 {
+    background-color: beige;
+}
+
+div li { 
+    color: rgb(49, 154, 220);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.flexstyle {
+    border-color: aquamarine;
+    border-width: 6px;
+    border-style: double;
+    display: flex;
+    justify-content: space-around;
+}

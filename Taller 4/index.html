@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <center><h1>Tienda de Teléfonos Inteligentes</h1></center>
+        <center><p>Encuentra el mejor smartphone para ti</p></center>
+        <center><nav>
+            <a href="index.html">Productos</a> | 
+            <a href="index.html">Ofertas</a> |
+            <a href="index.html">Información</a> |
+        </nav></center>
+    </header>
+
+    
+    <div class="container">
+
+        <!-- Sección de Productos Destacados -->
+        <div class="productos">
+            <h2>Productos Destacados</h2>
+
+            <div class="producto">
+                <img src="iphone-15.jpg" alt="Teléfono Modelo A">
+                <h3>Teléfono Modelo A</h3>
+                <p>El Modelo A ofrece un diseño moderno con características avanzadas para mejorar tu experiencia móvil.</p>
+                <ul>
+                    <li>Pantalla AMOLED de 6.5 pulgadas</li>
+                    <li>Cámara principal de 108 MP</li>
+                    <li>Batería de 5000 mAh</li>
+                </ul>
+            </div>
+
+            <div class="producto">
+                <img src="iphone-15.jpg" alt="Teléfono Modelo B">
+                <h3>Teléfono Modelo B</h3>
+                <p>El Modelo B está diseñado para brindar alto rendimiento y durabilidad.</p>
+                <ul>
+                    <li>Pantalla OLED de 6.1 pulgadas</li>
+                    <li>Cámara principal de 48 MP</li>
+                    <li>Batería de 4500 mAh</li>
+                </ul>
+            </div>
+        </div>
+
+       <!-- Barra lateral derecha con Información Adicional y Contacto -->
+       <aside>
+        <!-- Sección de Información Adicional -->
+        <div class="info-adicional">
+            <h2>Información Adicional</h2>
+            <img src="tienda.jpg" alt="Accesorios disponibles">
+            <p>Explora más detalles sobre nuestros modelos, productos y elige el que mejor se adapte a tus necesidades.</p>
+            <a href="#">Ver Accesorios</a>
+        </div>
+
+        <!-- Sección de Contacto -->
+        <div class="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </aside>
+    
+    </div>
+</body>
+</html>

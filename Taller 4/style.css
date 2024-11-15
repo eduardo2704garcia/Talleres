@@ -1,0 +1,99 @@
+.header {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 20px;
+}
+
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.productos {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.producto img {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+aside {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.info-adicional {
+    background-color: #E0F7FA; 
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.info-adicional img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.contacto h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contacto input, .contacto textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #45a049;
+}
