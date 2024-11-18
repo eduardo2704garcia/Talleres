@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Tablas</title>
+    <header>
+        <h1>Tablas</h1>
+        <p>El uso de la etiqueta <em>table</em>, es para el envío y recepción de la información</p>
+    </header>
+
+    <section>
+        <article>
+            <table frame="hsides" rules="rows" border="3px" cellpadding="8px" cellspacing="8px"> <!-- Comando para hacer una tabla agregando borde relleno y espaciado-->
+                <caption align="bottom">Lista de Contactos</caption> <!--para poner al final el titulo-->
+                <colgroup> <!--Comando para aplicar estilos a las columnas-->
+                    <col style="background-color: beige;"> <!--Estilo para primera columna-->
+                    <col style="background-color: aquamarine;"> <!--Estilo para la segunda columna-->
+                </colgroup>
+                <thead> <!-- Comando para hacer el encabezado de una tabla-->
+                    <tr>
+                        <th scope="col">Nombres</th> <!-- Comando para los campos de una tabla usando colspan para marcar 2 celdas -->
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Comando para hacer el cuerpo de la tabla-->
+                    <tr> <!-- Comando para hacer una fila de una tabla -->
+                        <td>Segundo</td>
+                        <td>García</td>
+                        <td>Quito</td>
+                        <td>0987398468</td>
+                    </tr>
+                    <tr>
+                        <td>Nohemí</td>5
+                        <td>Romero</td>
+                        <td>Quito</td>
+                        <td>0983339952</td>
+                    </tr>
+                    <tr>
+                        <td>Melissa</td>
+                        <td>Leiva</td>
+                        <td>Quito</td>
+                        <td>0983339952</td>
+                    </tr>
+                    <tr>
+                        <td>Daniela</td>
+                        <td>Leiva</td>
+                        <td>Quito</td>
+                        <td>0983339952</td>
+                    </tr>
+                    <tr>
+                        <td>Yadira</td>
+                        <td>García</td>
+                        <td>Quito</td>
+                        <td>0983339952</td>
+                    </tr>
+                </tbody>
+                <tfoot> <!-- Comando para poner resultados en una tabla-->
+                    <td>Suma</td>
+                    <td>Multiplicación</td>
+                    <td>División</td>
+                    <td>Resultados</td>
+                </tfoot>
+            </table>
+            <article>
+                <table frame="hsides" rules="rows" border="3px" cellpadding="8px" cellspacing="8px"> <!-- Comando para hacer una tabla agregando borde relleno y espaciado-->
+                    <caption align="bottom">Lista de Contactos</caption> <!--para poner al final el titulo-->
+                    <colgroup> <!--Comando para aplicar estilos a las columnas-->
+                        <col style="background-color: beige;"> <!--Estilo para primera columna-->
+                        <col style="background-color: aquamarine;"> <!--Estilo para la segunda columna-->
+                    </colgroup>
+                    <thead> <!-- Comando para hacer el encabezado de una tabla-->
+                        <tr>
+                            <th scope="col">Nombres</th> <!-- Comando para los campos de una tabla usando colspan para marcar 2 celdas -->
+                            <th>Apellidos</th>
+                            <th>Dirección</th>
+                        </tr>
+                    </thead>
+                    <tbody> <!-- Comando para hacer el cuerpo de la tabla-->
+                        <tr> <!-- Comando para hacer una fila de una tabla -->
+                            <td rowspan="4">Segundo</td>
+                            <td>García</td>
+                            <td rowspan="4">Quito</td>
+                        </tr>
+                        <tr>
+                            <td>Quito</td>
+                        </tr>
+                        <tr>
+                            <td>Quito</td>
+                        </tr>
+                        <tr>
+                            <td>Quito</td>
+                        </tr>
+                    </tbody>
+                    <tfoot> <!-- Comando para poner resultados en una tabla-->
+                        <td>Suma</td>
+                        <td>Multiplicación</td>
+                        <td>División</td>
+                    </tfoot>
+                </table>
+        
+            </article>
+            <form action="submit" method="post">
+                <label for="Nombres">Nombres:</label>
+                <input type="text" id="txtNombres" placeholder="nombres" maxlength="20">
+                <br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="txtApellidos" placeholder="apellidos" maxlength="20">
+                <br>
+                <label for="Password">Password:</label>
+                <input type="Password" id="txtPassword" placeholder="password" maxlength="10">
+                <br>
+                <select id="cb">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                    <option value="administrativo">Administrativo</option>
+                </select>
+                <br><br>
+                <label>Obersvación:</label>
+                <textarea name="taObeservacion"></textarea>
+                <br><br>
+                <button class="buton">Guardar</button>
+            </form>
+    </section>
+</head>
+<body>
+    
+</body>
+</html>

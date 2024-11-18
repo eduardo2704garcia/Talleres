@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,191,45,0.8940826330532213) 100%);
+    color: black;
+}
+
+caption {
+    background-color: #fdbf2d;
+}
+
+input[type="text"] {
+    background-color: beige;
+    border-radius: 15px;
+}
+
+
+input[type="password"] {
+    background-color: aquamarine;
+    border-bottom: 2px solid #040301;
+    border-radius: 3px;
+    color: black;
+}
+
+input {
+    border-radius: 10px;
+    border: 0px;
+    outline: auto;
+}
+
+::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+input[type="password"]::placeholder {
+    color: #fdbf2d;
+}
+
+input[type="text"]::placeholder {
+    color: #fdbf2d;
+}
