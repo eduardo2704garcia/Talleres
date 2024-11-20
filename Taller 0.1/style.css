@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #918e8d;
+    padding: 20px;
+}
+
+/*Header*/ 
+
+.header {
+    background-color: #191817;
+    display: flex; /*centra el contenido de forma vertical*/
+    justify-content: space-between; /*si quiero todo a la derecha es flex-end*/
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+    /*margin-right: auto; para poner el logo a la izquierda*/
+    /*order; 3 lo uso solo si quiero que mi logo este al lado derecho*/
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+/* .header nav { cambia el orden del nav
+    order; 1
+}*/
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-weight: 700;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #ce0606;
+}
+
+/* .header .btn { cambia el boton
+    order: 2;
+}*/
+
+.header .btn button {
+    /*margin-left: 20px; para separar un poco a la izquierda los links del boton*/
+    font-weight: 700;
+    color: #ce0606;
+    padding: 9px 25px;
+    background: #fafafa;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #191817;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+/*main*/
+
+.main {
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.container-1 {
+    flex: 1 1 70%;
+    padding: 10px;
+}
+
+section {
+    width: 750px;
+    height: 450px;
+    margin-top: 15px;
+    background-color: #918e8d;
+    float: left;
+}
+
+.section-1 {
+    background-color: #fafafa;
+}
+
+/*aside*/
+
+aside {
+    width: 185px;
+    height: 400px;
+    background-color: #5e5b5b;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 20%;
+}

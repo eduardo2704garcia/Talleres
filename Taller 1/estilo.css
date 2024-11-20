@@ -1,7 +1,52 @@
 body{
     background-color: #c9c9c9;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
+
+/*Menu*/
+
+.header {
+    background-color: #191817;
+    display: flex; /*centra el contenido de forma vertical*/
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.navbar ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Coloca los elementos en línea */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none; /* Elimina subrayado */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Cambia color al pasar el cursor */
+    border-radius: 5px;
+}
+
+/**/
 
 p{
     color: black;
