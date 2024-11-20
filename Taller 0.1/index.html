@@ -7,63 +7,111 @@
     <title>Repaso Prueba</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Logo de la pagina">
-        </div>
-        <nav>
-            <ul class="nav-links"> <!--Lista desordenada-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="\Users\eduag\OneDrive\Escritorio\ESPE-4TO SEMESTRE\Programación Web\Talleres\Taller 0\index.html">Coffee House</a></li>
-                <li><a href="\Users\eduag\OneDrive\Escritorio\ESPE-4TO SEMESTRE\Programación Web\Talleres\Taller 2\index.html">Portafolio</a></li>
-                <li><a href="\Users\eduag\OneDrive\Escritorio\ESPE-4TO SEMESTRE\Programación Web\Talleres\Taller 4\index.html">SmathPhones</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn"><button>Guardar</button></a>
-    </header>
-    <main class="main">
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Logo de la pagina">
+            </div>
+                <nav>
+                    <ul class="nav-links"> <!--Lista desordenada-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="\Users\eduag\OneDrive\Escritorio\ESPE-4TO SEMESTRE\Programación Web\Talleres\Taller 0\index.html">Coffee House</a></li>
+                        <li><a href="\Users\eduag\OneDrive\Escritorio\ESPE-4TO SEMESTRE\Programación Web\Talleres\Taller 2\index.html">Portafolio</a></li>
+                        <li><a href="\Users\eduag\OneDrive\Escritorio\ESPE-4TO SEMESTRE\Programación Web\Talleres\Taller 4\index.html">SmathPhones</a></li>
+                    </ul>
+                 </nav>
+                <a href="#" class="btn"><button>Guardar</button></a>
+        </header>
         <center><h1>REDES SOCIALES</h1></center>
-        <div class="container">
-            <aside>
-                <section class="section-1">
+            <section class="cuerpo">
+                <div>
                     <h2>FACEBOOK</h2>
                     <p>
-                        La historia de <em>Facebook</em> comienza en 2004, cuando el entonces estudiante de Harvard,
-                        <strong>Mark Zuckerberg</strong>, creó un sitio web llamado Facemash. El sitio web se hizo popular en el campus, 
-                        pero también se encontró en problemas porque usaba fotos de estudiantes sin su consentimiento.
+                        La historia de Facebook comienza en 2004, cuando el entonces estudiante de Harvard, 
+                        Mark Zuckerberg, creó un sitio web llamado Facemash. El sitio web se hizo popular 
+                        en el campus, pero también se encontró en problemas porque usaba fotos de estudiantes 
+                        sin su consentimiento.
                     </p>
-                    <dl>
-                        <strong><dt>Características</dt></strong>
-                            <dd>Perfiles personales detallados.</dd>
-                            <dd>Messenger para comunicación instantánea.</dd>
-                            <dd>Marketplace para comprar y vender artículos.</dd>
-                        <strong><dt>Dispositivos Móviles</dt></strong>
-                            <dd>iPhone</dd>
-                            <dd>iPad</dd>
-                            <dd>Android 6.0 o superior</dd>
-                    </dl>
-                    <center><img src="fb.png" alt="Facebook" width="400" height="300"></center>
-                    <center><button>Visitar Página</button></center>
-                </section>
-            </aside>
-            <aside>
-                    <div class="formulario">
-                        <h2>Ingreso</h2>
+                    <center><img src="fb.png" alt="Facebook" width="150" height="150"></center>
+                    <center><a href="facebook.com"><button class="button" id="27">Página</button></a></center>
+                </div>              
+            </section>
+            <section>
+                <h4>Resultados</h4>
+                <table border="4px" cellpadding="100px" cellspacing="0px">
+                    <caption>Resultados</caption>
+                    <colgroup>
+                        <col style="background-color:rgb(59, 115, 218)">
+                        <col style="background-color:rgb(129, 159, 216)" >
+                    </colgroup>
+                    <thead align="left">
+                        <tr style="background-color: antiquewhite;"> 
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Año</th>
+                            <th>Coste</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>Ford</td>
+                            <td>Fiesta</td>
+                            <td>5</td>
+                            <td>16.000.00$</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>Fiesta</td>
+                            <td>5</td>
+                            <td>16.000.00$</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>Fiesta</td>
+                            <td>5</td>
+                            <td>16.000.00$</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>Fiesta</td>
+                            <td>5</td>
+                            <td>16.000.00$</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>Fiesta</td>
+                            <td>5</td>
+                            <td>16.000.00$</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>Fiesta</td>
+                            <td>5</td>
+                            <td>16.000.00$</td>
+                        </tr>
+                    </tbody>
+        
+                </table>
+              </section>
+            <section>
+                <aside>
+                    <div class="cuerpo-1">
+                        <center><h2 class="h2-1">Registro</h2></center>
                         <form action="submit" method="post">
-                            <label for="Nombres">Nombres:</label>
-                            <input type="text" id="txtNombres" placeholder="nombres" maxlength="20">
-                            <br><br>
-                            <label for="apellidos">Apellidos:</label>
-                            <input type="text" id="txtApellidos" placeholder="apellidos" maxlength="20">
-                            <br><br>
+                            <label for="Usuario">Usuario:</label>
+                            <input type="text" id="1" placeholder="User">
+                            <br>
                             <label for="Password">Password:</label>
-                            <input type="Password" id="txtPassword" placeholder="password" maxlength="10">
-                            <br><br>
-                            <button class="buton">Guardar</button>
+                            <input type="password" id="2" placeholder="Password">
+                            <br>
+                            <center><button class="button" type="submit">Save</button></center>
                         </form>
                     </div>
-            </aside>
-        </div>
-    </main>
+                    <div class="cuerpo-2">
+                        
+                    </div>
+                </aside>
+            </section>
+    </div>
 </body>
 </html>
