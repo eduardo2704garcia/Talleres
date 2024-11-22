@@ -1,0 +1,76 @@
+*  {
+  margin: 0;
+}
+
+
+body {
+    height: 100%;
+    background-color: grey;
+}
+
+.card {
+    box-shadow: #0000 0px 0px 50px; /*sombreado*/
+    margin: auto;
+    margin-top: 50px;
+    height: 700px;/*tamaño del cuadro*/
+    background-color: #fafafa;
+    width: 500px; /*ancho del cuadro*/
+}
+
+.card-header {
+    height: 350px;
+    background-image: url(adidas.jpg);
+}
+
+h4 {
+    color: goldenrod;
+}
+
+.card-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px; /*espaciado*/
+}
+
+.size {
+    margin-top: 50px;
+}
+
+.color {
+    margin-top: 40px;
+}
+
+.red {
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    color: red;
+    width: 10px;
+    height: 10px;
+}
+
+.blue {
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 50%;
+    color: blue;
+    width: 10px;
+    height: 10px;
+}
+
+.white {
+    border: 1px solid white;
+    background-color: wheat;
+    border-radius: 50%;
+    color: white;
+    width: 10px;
+    height: 10px;
+}
+
+.green {
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50%;
+    color: green;
+    width: 10px;
+    height: 10px;
+}

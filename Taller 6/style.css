@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: grey;
+}
+
+.section1 {
+    height: 400px;
+    background-color: aquamarine;
+    background-image: url(angular.png);
+    background-repeat: no-repeat; /*la imagen no se va a repetir*/
+    background-size: contain; /*va de la mano con el repeat*/
+    background-position: center;
+}
+
+.section2 {
+    background-image: url(clr.png);
+    height: 400px;
+}
+
+.section3 {
+    height: 500px;
+    background-image: url(angufond.jpg);
+    background-size: 100%;
+    background-attachment: fixed; /*mientras escroleo la imagen va a estar fija*/
+}
+
+.section4 {
+    height: 1000px;
+}

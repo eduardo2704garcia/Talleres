@@ -134,7 +134,7 @@ header {
   }
 
  /* Estilo para aside izquierdo */
-.left {
+.left { 
     background-color: black; 
     color: white; 
     padding: 15px;
@@ -181,6 +181,7 @@ header {
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
+    max-height: 58vh;
 }
 
 .titulo {
