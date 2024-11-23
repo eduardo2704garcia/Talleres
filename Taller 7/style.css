@@ -8,18 +8,32 @@ body {
     background-color: grey;
 }
 
+body:hover {
+    background-color: rgb(247, 244, 89);
+    transition: backgraund-color 0.3s ease;
+}
+
 .card {
     box-shadow: #0000 0px 0px 50px; /*sombreado*/
     margin: auto;
     margin-top: 50px;
-    height: 700px;/*tamaño del cuadro*/
-    background-color: #fafafa;
+    height: 630px;/*tamaño del cuadro*/
+    background-color: #6f6464;
     width: 500px; /*ancho del cuadro*/
 }
 
 .card-header {
     height: 350px;
-    background-image: url(adidas.jpg);
+    background-image: url(camiseta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-header:hover {
+    transform: rotate(90deg);
+    /*transform: scale(1.5, 0.5);*/ /*con esos valores dentro del scale puedo comprimir la imagen horizontal/vertical o que se estire vertical/horizontal*/
+    transition: transform 0.3s ease;
 }
 
 h4 {
@@ -28,7 +42,24 @@ h4 {
 
 .card-content {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 40px; /*espaciado*/
+    padding: 20px; /*espaciado*/
+}
+
+.card-title1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1rem;/*tamaño del precio*/
+    font-weight: bold;/*resalta el precio*/
+    color: goldenrod;
+}
+
+.card-title1:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .size {
@@ -40,7 +71,7 @@ h4 {
 }
 
 .red {
-    border: 1px solid red;
+    border: 1px solid rgb(10, 10, 10);
     background-color: red;
     border-radius: 50%;
     color: red;
@@ -49,7 +80,7 @@ h4 {
 }
 
 .blue {
-    border: 1px solid blue;
+    border: 1px solid rgb(13, 13, 13);
     background-color: blue;
     border-radius: 50%;
     color: blue;
@@ -58,8 +89,8 @@ h4 {
 }
 
 .white {
-    border: 1px solid white;
-    background-color: wheat;
+    border: 1px solid rgb(11, 11, 11);
+    background-color: rgb(240, 238, 235);
     border-radius: 50%;
     color: white;
     width: 10px;
@@ -67,7 +98,7 @@ h4 {
 }
 
 .green {
-    border: 1px solid green;
+    border: 1px solid rgb(20, 20, 20);
     background-color: green;
     border-radius: 50%;
     color: green;
