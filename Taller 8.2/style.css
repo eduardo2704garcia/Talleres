@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%; /*pantalla*/
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: flex;/*todos los elementos dentro del div se apliquen*/
+    border: 1px solid blue;
+    height: 500px;/*altura*/
+    width: 40%;/*ancho*/
+}
+
+.container div {
+    height: 50px;
+}
+
+/*Valores del flex:  
+flex: 1 1 100px; -> 3 reglas en una
+flex-grow; 1; -> cuanto crece el elemento respecto al espacio disponible
+flex-basis; 100px; -> cuando se reduce el elemento respecto al espacio dispobible
+flex-shrink; 1; -> tamaño inicial del contenedor - antes que crezca o  se aplique  grow y shrink
+*/
+
+.item-1 {
+    flex: 1 1 100px;
+    background-color: red;
+}
+
+.item-2 {
+    flex: 2 2 100px;
+    background-color: greenyellow;
+}
+
+.item-3 {
+    flex: 1 1 100px;
+    background-color: chocolate;
+}
+
+.item-4 {
+    flex: 1 1 100px;
+    background-color: yellow;
+}

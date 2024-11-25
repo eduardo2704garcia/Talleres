@@ -1,0 +1,151 @@
+body {
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(111, 111, 233);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.navInicial {
+    background-color: #5c6bc0;
+    padding: 10px;
+    text-align: center;
+}
+
+.navInicial a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.fecha {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-color: rgb(91, 96, 228);
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.contenido {
+    position: relative; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px; /* Espacio entre texto y contenedor de imágenes */
+    flex-wrap: wrap; /* Permite que el contenido se ajuste automáticamente */
+}
+
+.article-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.text {
+    flex: 1; /* El texto ocupa todo el espacio disponible */
+    min-width: 300px; /* Ancho mínimo para evitar que se reduzca demasiado */
+}
+
+/* Configuración inicial de las imágenes en horizontal */
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Las imágenes se ajustan automáticamente si no caben */
+    gap: 10px; /* Espacio entre imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.images img {
+    flex: 1 1 calc(33.333% - 10px); /* Cada imagen ocupa un tercio del ancho */
+    max-width: 100px; /* Tamaño máximo de las imágenes */
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    min-width: 80px; /* Evita que las imágenes se vuelvan demasiado pequeñas */
+}
+
+.sidebar {
+    flex: 1;
+    border-radius: 10px;
+    background-color: #c1d3fe;
+    padding: 15px;
+    box-sizing: border-box;
+    min-width: 200px;
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    .cuerpoflex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-1, .item-2 {
+        flex: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .item-2 img {
+        display: block;
+        margin: 0 auto;
+    }
+}

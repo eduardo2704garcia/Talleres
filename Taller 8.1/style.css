@@ -1,0 +1,33 @@
+#noticias {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+
+    /*Creacion de columnan para el elemento article*/
+
+    column-count: 4;/*crear las columnas*/
+    column-gap: 20px;/*espaciado entre columnas*/
+    column-rule-style: dotted;
+    column-rule-color: red;
+    column-rule-width: 10px;
+
+    column-rule: 1px dotted red; /*3 reglas en una sola linea, tamaño ancho de la linea/el estilo y el color*/
+}
+
+/*header*/
+.header {
+    background: #34568B; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 1rem; /* Espaciado interno del encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+}
+
+#noticias1 {
+    width: 950px;
+    padding: 20px;
+    border: 1px solid black;
+
+    column-count: 3;
+    column-gap: 60px;
+    column-rule: 1px dotted black;
+}

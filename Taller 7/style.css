@@ -5,11 +5,11 @@
 
 body {
     height: 100%;
-    background-color: grey;
+    background-color: rgb(243, 240, 240);
 }
 
 body:hover {
-    background-color: rgb(247, 244, 89);
+    background-color: rgb(11, 11, 11);
     transition: backgraund-color 0.3s ease;
 }
 
@@ -18,16 +18,34 @@ body:hover {
     margin: auto;
     margin-top: 50px;
     height: 630px;/*tamaño del cuadro*/
-    background-color: #6f6464;
+    background-color: #c6c2c2;
     width: 500px; /*ancho del cuadro*/
 }
 
 .card-header {
+    position: relative;
+    color: white;
     height: 350px;
-    background-image: url(camiseta.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado {
+    position: absolute; /* Superpone sobre la imagen */
+    background-color: rgba(184, 161, 161, 0.8); /* Fondo semitransparente */
+    color: white;
+    padding: 20px; /* Opcional, da espacio interno al contenido */
+    z-index: 2; /* Sobre la imagen */
+    opacity: 0.25;
+}
+
+.card header img{
+    z-index: 1;/*revisar*/
+    height: 100%;
+    width: auto;/*mantiene mis proporciones de imagen*/
 }
 
 .card-header:hover {
@@ -105,3 +123,12 @@ h4 {
     width: 10px;
     height: 10px;
 }
+
+.encabezado:has(#key1:hover){
+    background-color: rgb(231, 237, 235);
+    opacity: 1;
+}
+
+.card-header:has(#key1:hover) img {
+    filter: blur(3px);
+ }
