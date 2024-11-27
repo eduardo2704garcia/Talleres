@@ -39,6 +39,12 @@ body {
 
 /*Desde aqui mi section*/
 
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
 
 .articulo-1 {
     width: 1000px;
@@ -54,7 +60,7 @@ body {
 .detalles {
     margin: 0px 60px 0px 40px;
     padding-top: 30px;
-    padding-left: 50px;
+    padding-left: 30px;
     position: relative; /*posiciono mi elemento  sin que este fijo*/
 }
 
@@ -62,53 +68,14 @@ body {
     width: 80px;
     height: 80px;
     position: absolute;
+    top: 30px;
+    left: -80px;
     background-color: #34568B;
     color: white;
-    top: 20%;
-    left: -10%;
-    margin-left: 20px;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-}
-
-.detalles-1 {
-    margin: 0px 60px 0px 40px;
-    padding-top: 30px;
-    padding-left: 50px;
-    position: relative; /*posiciono mi elemento  sin que este fijo*/
-}
-
-.detalles-2 {
-    margin: 0px 60px 0px 40px;
-    padding-top: 30px;
-    padding-left: 50px;
-    position: relative;
-}
-
-.fecha-1 {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    background-color: #34568B;
-    color: white;
-    top: 20%;
-    left: -10%;
-    margin-left: 20px;
     border-radius: 5px;
-    text-align: center;
-}
-
-.fecha-2 {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    background-color: #34568B;
-    color: white;
-    top: 43%;
-    left: 0.1%;
-    margin-left: 20px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .fecha p {
@@ -120,23 +87,6 @@ body {
     font-size: 1rem;
 }
 
-.fecha-1 p {
-    font-size: 2rem;
-    margin-top: 10px;
-}
-
-.fecha-1 span {
-    font-size: 1rem;
-}
-
-.fecha-2 p {
-    font-size: 2rem;
-    margin-top: 10px;
-}
-
-.fecha-2 span {
-    font-size: 1rem;
-}
 /*Hasta aqui mi section*/
 
 /*Desde aqui mi aside*/
@@ -145,10 +95,24 @@ body {
     width: 420px;
     height: 200px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     float: right; /*mover el aside*/
-    margin-right: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-left: 10px;
+    flex: 1 1 30%;
+    margin: 30px;
+}
+
+.aside h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.aside ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.aside li {
+    font-size: 1rem;
 }
