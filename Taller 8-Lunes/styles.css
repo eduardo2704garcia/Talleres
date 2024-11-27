@@ -48,7 +48,7 @@ body {
 
 .articulo-1 {
     width: 1000px;
-    height: 500px;
+    height: 630px;
     background-color: white;
     margin-left: 50px;
     margin-top: 30px;
@@ -62,6 +62,7 @@ body {
     padding-top: 30px;
     padding-left: 30px;
     position: relative; /*posiciono mi elemento  sin que este fijo*/
+    display: flex;
 }
 
 .fecha {
@@ -115,4 +116,21 @@ body {
 
 .aside li {
     font-size: 1rem;
+}
+
+/*Hasta aqui mi aside*/
+
+/*imagenes*/
+.parrafo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parrafo p {
+    flex: 1 1 0;
+}
+
+.parrafo img {
+    flex: 0 0 auto;
+    width: 200px;
 }

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(52, 237, 104);
+    height: 100%;
+}
+
+@keyframes cambiocolores {
+    0% {
+        background-color: rgb(237, 142, 47);
+    }
+
+    25% {
+        background-color: rgba(238, 53, 53, 0.708);
+        transform: scale(0.5);
+    }
+
+    50% {
+        background-color: rgb(252, 252, 100);
+        transform: scale(1.1);
+    }
+
+    75% {
+        background-color: blueviolet;
+        transform: scale(0.5);
+    }
+
+    100% {
+        background-color: rgb(237, 142, 47);
+    }
+}
+
+
+@keyframes volar {
+    0% {}
+
+    20% {
+        transform: translate(200px, 0px);
+    }
+
+    30% {
+        transform: translate(200px, 0px) rotate(90deg);
+    }
+
+    40% {
+        transform: translate(200px, 200px) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(200px, 200px) rotate(180deg);
+    }
+
+    100% {}
+}
+
+.avion {
+    animation-name: volar;
+    animation-duration: 10s;
+}
+
+.circulo {
+    background-color: rgb(237, 142, 47);
+    width: 100px;
+    height: 100px;
+
+    animation-name: cambiocolores, volar;
+    animation-duration: 1s, 10s;
+    animation-iteration-count: infinite;
+}

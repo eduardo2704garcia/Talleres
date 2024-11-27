@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+}
+
+.container  {
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.circulo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+
+    animation: diagonal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes diagonal {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(200px, 400px);
+    }
+    100% {
+        transform: translate(300px, 0);
+    }
+}
+
+.barra {
+    background-color: green;
+    border-radius: 10px;
+    height: 20px;
+    width: 100px;
+    position: relative;
+    top: 25rem;
+
+    animation: lateral;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes lateral {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(400px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
