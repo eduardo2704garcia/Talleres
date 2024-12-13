@@ -1,0 +1,116 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: B612, serif;
+  margin: 0;
+  width: 100%;
+}
+
+/* ====================================================================== */
+/*                      DEFINICIONES GENERALES                            */
+/* ====================================================================== */
+
+:root {
+  --color-font-secundario: #666;
+  --color-link: #900;
+  --color-link-hover: rgb(221, 44, 53);
+  --background-sidebar: beige;
+}
+
+html, body, .main, .content {
+  height: 100%;
+}
+
+.sidebar, .content {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* ====================================================================== */
+/*                                    MAIN                                */
+/* ====================================================================== */
+
+/* El contenido general tiene un layout horizontal */
+.main {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+/* Para dispositivos chicos, sin embargo, tendremos un menú vertical
+   y queremos que el menú de opciones vaya al fondo */
+@media (max-width: 600px) {
+  html, body, .main, .content {
+    height: auto;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+
+/* ====================================================================== */
+/*                                   SIDEBAR                              */
+/* ====================================================================== */
+
+.sidebar {
+  background-color: var(--background-sidebar);
+}
+
+.sidebar--titulo {
+  font-size: 1.5em;
+}
+
+.sidebar__menu--option {
+  color: var(--color-link);
+  text-decoration: none;
+  padding: 3px 0; 
+  display: block;
+}
+
+.sidebar__menu--option:hover {
+  color: var(--color-link-hover);
+}
+
+@media all and (min-width: 1001px) {
+  .sidebar__menu--option::after {
+    content: attr(data-description);
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--color-font-secundario);
+    margin-left: 0.5rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .sidebar {
+    width: calc(100% - 2em);
+    padding: 1em;
+  }
+
+  .sidebar__menu--option {
+    padding-left: 21px;
+  }
+}
+
+/* ====================================================================== */
+/*                                   CONTENT                              */
+/* ====================================================================== */
+
+.content {
+  width: 80%;
+}
+
+.content--titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.content__article {
+  font-size: 1.1em;
+  padding: 1em;
+  color: #353535;
+}
