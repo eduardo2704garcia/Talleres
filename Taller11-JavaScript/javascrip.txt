@@ -1,0 +1,10 @@
+Es una parte global de todos los frame, se utiliza a traves del done es decir a traves del navegador
+Lenguaje de programacion utilizado para hacer paginas web iteractivas.
+-Html -JSON -jQuery -BostTrap()
+
+Variables:
+- let var const
+dos primeras para Variables
+var para forma global en cualquier momento y la variable puede tomar cualquier valor
+let para un bloque de codigo especifico
+const nunca cambia de valor
