@@ -1,4 +1,5 @@
-class Producto { // Clase Producto
+//Creacion de las clases proucto, inventario y venta
+class Producto { 
     constructor(nombre, precio, cantidad, categoria) {
         this.nombre = nombre;
         this.precio = precio;
@@ -34,7 +35,8 @@ class Inventario {
             }
         });
     }
-
+    
+    //dESCUENTO POR CATEGORIA :)
     aplicarDescuentoPorCategoria(categoria, porcentaje){ 
         this.productos.forEach(producto => {
             if (producto.categoria === categoria){
@@ -92,7 +94,7 @@ class Venta {
     }
 }
 
-
+//agregar productos
 const inventario = new Inventario();
 console.log('---------- AGREGANDO PRODUCTOS AL INVENTARIO ----------');
 inventario.agregarProductoAlInventario('Coca-Cola', 1, 10, 'Refresco');
