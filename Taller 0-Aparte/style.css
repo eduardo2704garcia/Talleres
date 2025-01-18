@@ -1,5 +1,30 @@
 body {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: #ffffff;
+   color: #000000;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+   background-color: #121212;
+   color: #ffffff;
+}
+
+/* Estilo del botón */
+.btn-theme {
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   padding: 10px 15px;
+   background-color: #007bff;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn-theme:hover {
+   background-color: #0056b3;
 }
 
 *{
