@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .azul {
+            color: blue;
+        }
+        .rojo {
+            color: red;
+        }
+    </style>
+    <title>DOM en JavaSxript</title>
+</head>
+<body>
+    <head>
+        <h1 id="cabecera">Titulo del documento</h1>
+        <p id="parrafo1" class="azul">Parrafo N° 1</p>
+        <p id="parrafo2" class="azul">Parrafo N° 2</p>
+        <p id="parrafo3" class="rojo">Parrafo N° 3</p>
+        <p id="parrafo4" class="azul">Parrafo N° 4</p>
+    </head>
+<script>
+    /*getelementById*/
+    //let cabecera = document.getElementById('cabecera').innerHTML; //retornar un objeto, con sus respectivos atributos
+    // console.log('Valor cabecera: '+ cabecera);
+
+    // console.log(`Valor cabecera: ${cabecera.innerHTML}`);
+
+    // let parrafo = document.getElementById('parrafo');
+    // console.log(`Valor parrafo: ${parrafo.innerHTML}`);
+
+    // parrafo.innerHTML = 'Nuevo valor de parrafo';
+    // cabecera.innerHTML = 'Cambio de Cabecera';
+    // console.log(`Nuevo valor parrafo: ${parrafo.innerHTML}`);
+
+    /*getElementBytagename*/
+    // let parrafos = document.getElementsByTagName('p');
+    // console.log(`Nro. de Parrafos: ${parrafos.length}`);
+
+    // for (const elements of parrafos) {
+    //     console.log(elements.innerHTML);
+    // }
+
+    /*getElementByClassName*/
+    // let parrafos = document.getElementsByClassName("azul");
+    // console.log(`Numero de parrafos en azul: ${parrafos.length}`);
+
+    let elementos = document.querySelectorAll('p.azul');
+    console.log(`Nro de elementos: ${elementos.length}`);
+
+    for (const elements of elementos) {
+        console.log(elements.innerHTML);
+    }
+</script>
+</body>
+</html>

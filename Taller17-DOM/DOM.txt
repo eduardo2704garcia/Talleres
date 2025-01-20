@@ -1,0 +1,2 @@
+//Documento modelo de objeto
+rut html > elemntos como boy head cada uno de ellos contiene elementos como titulo h1 texto entre otros con valores especificos enlazados con cada elementos

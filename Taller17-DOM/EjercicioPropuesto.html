@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM en JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">DOM en JavaScript</h1>
+    <button type="button" onclick="cambiarImagen()">Mostrar</button>
+    <br>
+    <img id="image" src="/Taller17-DOM/images/ui.png" alt="imagen" width="300">
+    <script>
+        document.getElementById('titulo').style.color = 'blue';
+        const imagenes = [
+            './images/img1.jpeg',
+            './images/img2.jpeg',
+            './images/img3.jpeg',
+            './images/img4.jpeg',
+            './images/img5.jpeg'
+        ];
+        let indice = 0;
+        function cambiarImagen(){
+            indice = (indice + 1) % imagenes.length; // Incrementa el índice y vuelve al inicio si se pasa del tamaño del array
+            document.getElementById('image').src = imagenes[indice];
+        }
+
+        setInterval(cambiarImagen,3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .title {
+            color: blue;
+        }
+    </style>
+    <title>DOM en JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo" class="title">manejo de DOM con JS</h1>
+    <h1 id="titulo2" class="title">manejo de DOM con JS</h1>
+    <button id="mostrarValores" onclick="mostrar()" type="submit">Mostrar</button>
+    <br>
+    <div id="valores">
+
+        <img src="/Taller17-DOM/images/images.png" alt="img1" id="imagen">
+
+    </div>  
+    <script>
+        //document.write('Saludos desde Write!');
+        function mostrar(){
+            //document.write('Adios');//sobreescribe todos los elementos y los deja con los que estan dentro de la estructura
+            // let elementos = document.getElementsByClassName('title');
+            // for (const element of elementos) {
+            //     element.innerHTML = '<br>Nuevo Titulo';
+            // }
+            //document.getElementsByClassName('Titulo').innerHTML = '<br> Nuevo Título'
+
+            document.getElementById('imagen').src = '/Taller17-DOM/images/ui.png'
+        }
+    </script>
+</body>
+</html>
+
+/*Crear una funcion que permita el cambio de una imagen cada 2 0 3 segundo 
+setInterval
+setTimeOut
+4 o 5 imagenes*/
