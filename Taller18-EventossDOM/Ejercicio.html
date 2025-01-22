@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+</head>
+<body>
+    <h1 id="titulo-pagina">Gestor de Tareas</h1>
+    <button id="botonPanel">Mostrar Panel</button>
+    <div id="panel-configuracion" style="display: none;">
+        <p>Panel de Configuración</p>
+        <form id="formulario">
+            Título de la página: <input type="text" id="titulo">
+            <br><br>
+            Color de fondo de la página:
+            <select id="temaFondo">
+                <option value="white">Claro</option>
+                <option value="black">Oscuro</option>
+                <option value="blue">Azul</option>
+            </select>
+            <br><br>
+            Habilitar comentarios: <input type="checkbox" id="comentarios">
+        </form>
+    </div>
+    Comentarios: 
+    <textarea id="textarea-comentarios" cols="30" rows="10" disabled></textarea>
+    <div>
+        Nuevo elemento:
+        <input type="text" id="nuevoElemento" placeholder="Escribe aquí">
+        <button id="agregarElemento">Agregar</button>
+    </div>
+    <ul id="lista"></ul>
+
+    <script>
+        // Mostrar/ocultar el panel
+        const panel = document.getElementById('panel-configuracion');
+        const botonPanel = document.getElementById('botonPanel');
+        let estaOculto = true;
+
+        botonPanel.addEventListener('click', () => {
+            panel.style.display = estaOculto ? 'block' : 'none';
+            botonPanel.textContent = estaOculto ? 'Ocultar Panel' : 'Mostrar Panel';
+            estaOculto = !estaOculto;
+        });
+
+        // Actualizar título dinámicamente
+        const tituloInput = document.getElementById('titulo');
+        const tituloPagina = document.getElementById('titulo-pagina');
+        tituloInput.addEventListener('input', (ev) => {
+            tituloPagina.textContent = ev.target.value || "Gestor de Tareas";
+        });
+
+        // Cambiar el tema de la página
+        const temaFondo = document.getElementById('temaFondo');
+        temaFondo.addEventListener('change', (ev) => {
+            document.body.style.backgroundColor = ev.target.value;
+        });
+
+        // Habilitar o deshabilitar comentarios
+        const comentariosCheckbox = document.getElementById('comentarios');
+        const textareaComentarios = document.getElementById('textarea-comentarios');
+        comentariosCheckbox.addEventListener('change', () => {
+            textareaComentarios.disabled = !comentariosCheckbox.checked;
+        });
+
+        // Lista dinámica
+        const lista = document.getElementById('lista');
+        const inputNuevoElemento = document.getElementById('nuevoElemento');
+        const botonAgregarElemento = document.getElementById('agregarElemento');
+
+        botonAgregarElemento.addEventListener('click', () => {
+            const texto = inputNuevoElemento.value.trim();
+            if (texto) {
+                const li = document.createElement('li');
+                li.textContent = texto;
+                lista.appendChild(li);
+                inputNuevoElemento.value = '';
+            }
+        });
+
+        lista.addEventListener('click', (ev) => {
+            if (ev.target.tagName === 'LI') {
+                ev.target.remove();
+            }
+        });
+    </script>
+</body>
+</html>
